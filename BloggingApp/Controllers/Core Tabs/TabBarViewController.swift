@@ -15,9 +15,11 @@ class TabBarViewController: UITabBarController {
         setUI()
     }
     private func setUI() {
+        guard let currentUserEmail = UserDefaults.standard.string(forKey: "email") else { return }
+        
         let main = MainViewController()
         main.title = "Main"
-        let profile = ProfileViewController()
+        let profile = ProfileViewController(currentEmail: currentUserEmail)
         profile.title = "Profile"
         
         main.navigationItem.largeTitleDisplayMode = .always

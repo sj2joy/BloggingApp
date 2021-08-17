@@ -35,7 +35,6 @@
 		F84E534A26C633EA009B531F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E534926C633EA009B531F /* Extensions.swift */; };
 		F84E534C26C63D64009B531F /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E534B26C63D64009B531F /* PayWallDescriptionView.swift */; };
 		F84E534E26C76E59009B531F /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E534D26C76E59009B531F /* SignInHeaderView.swift */; };
-		F84E535026C78992009B531F /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E534F26C78992009B531F /* Sign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +96,6 @@
 		F84E534926C633EA009B531F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F84E534B26C63D64009B531F /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
 		F84E534D26C76E59009B531F /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
-		F84E534F26C78992009B531F /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +207,7 @@
 		F84E532026C612DD009B531F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F84E534626C631FB009B531F /* Configuration.storekit */,
 				F84E533C26C6270C009B531F /* User.swift */,
 				F84E533E26C62716009B531F /* BlogPost.swift */,
 			);
@@ -272,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				F84E532926C61396009B531F /* SignInViewController.swift */,
-				F84E534F26C78992009B531F /* Sign.swift */,
 				F84E532B26C6139C009B531F /* SignUpViewController.swift */,
 			);
 			path = Auth;
@@ -282,7 +280,6 @@
 			isa = PBXGroup;
 			children = (
 				F84E52F126C611C0009B531F /* MainViewController.swift */,
-				F84E534626C631FB009B531F /* Configuration.storekit */,
 				F84E532526C6137B009B531F /* ProfileViewController.swift */,
 				F84E532726C6138D009B531F /* TabBarViewController.swift */,
 			);
@@ -540,7 +537,6 @@
 			files = (
 				F84E534E26C76E59009B531F /* SignInHeaderView.swift in Sources */,
 				F84E534826C63359009B531F /* PayWallHeaderView.swift in Sources */,
-				F84E535026C78992009B531F /* Sign.swift in Sources */,
 				F84E533D26C6270C009B531F /* User.swift in Sources */,
 				F84E532C26C6139C009B531F /* SignUpViewController.swift in Sources */,
 				F84E532E26C613AB009B531F /* ViewPostViewController.swift in Sources */,
@@ -736,7 +732,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = seokjin.BloggingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -756,7 +752,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = seokjin.BloggingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
